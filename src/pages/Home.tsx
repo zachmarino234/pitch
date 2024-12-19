@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router';
-import { Splitscreen } from '../layouts/Splitscreen';
+import { SplitScreen } from '../layouts/SplitScreen';
 import '../styles/home.css'
 import Cards from '../assets/cards.svg'
 
@@ -7,7 +7,7 @@ export const Home = () => {
     const navigate = useNavigate();
 
     return (
-        <Splitscreen
+        <SplitScreen
             child1={<div className='titleContainer'>
                 <h1 className='title'>Create Your Next Great <span className='accent text'>Story</span></h1>
                 <p className='subText'>Pitch is a card game that supports journalists in pursuit of their next great idea </p>
