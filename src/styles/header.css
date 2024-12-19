@@ -4,33 +4,74 @@
     align-items: center;
     width: 100%;
     box-sizing: border-box;
-    padding: 10px 20px 10px;
+    padding: 10px 20px;
     background: var(--primary-gradient);
-    flex-shrink: 0;
+    position: relative;
+    height: 60px; /* Set a consistent height */
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    order: 0; /* Place it in the left-most position */
 }
 
 .logo {
     height: 100%;
-    max-height: 1.5rem /* 32px */;
+    max-height: 1.5rem;
     width: auto;
+    cursor: pointer;
+    order: 2; /* Place it in the right-most position */
 }
 
-nav {
+.nav {
     display: flex;
     gap: 10px;
+    justify-content: center;
+    flex: 1;
+    order: 1; /* Keep it centered */
 }
 
-nav button {
+.nav button {
     border: 1px solid transparent;
     background-color: transparent;
     font-size: 1rem;
     font-weight: 500;
+    color: white;
+    cursor: pointer;
+    height: 100%; /* Match the header height */
 }
 
-nav button:hover {
+.nav button:hover,
+.nav button.active {
     border: 1px solid white;
 }
 
-nav button.active {
-    border: 1px solid white;
+/* Mobile styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background: var(--primary-gradient);
+        gap: 10px;
+        padding: 10px 0;
+        border-top: 1px solid white;
+    }
+
+    .nav.open {
+        display: flex;
+    }
 }

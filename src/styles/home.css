@@ -7,6 +7,15 @@
     flex-shrink: 0;
 }
 
+.imageContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.imageContainer img {
+    width: 75%;
+}
+
 .accent {
     background: linear-gradient(90deg, #FF8018 0%, #F02E0C 100%);
 }
