@@ -4,27 +4,13 @@ import { CardProps } from '../types/CardProps';
 import '../styles/card.css'
 
 // Generic Card component.
-export const Card: React.FC<CardProps> = ({
+export const GameCard: React.FC<CardProps> = ({
     cardTitle,
     cardType,
     players,
     time,
     content
 }) => {
-    function renderCard() {
-        switch (cardType) {
-            case 'GAME':
-                return {
-                    
-                }
-            case 'PROMPT':
-                return 'Prompt'
-            case 'TOPIC':
-                return 'Topic'
-            default:
-                return 'Unknown'
-        }
-    }
     return (
         <div className='container'>
             <div className='body'>
