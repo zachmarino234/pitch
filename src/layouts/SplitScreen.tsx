@@ -1,6 +1,6 @@
 import '../styles/splitscreen.css'
 
-export const SplitScreen = ({
+export const Splitscreen = ({
     child1,
     child2
 }: {
