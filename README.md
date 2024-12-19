@@ -4,7 +4,7 @@
 </div>
 
 <h4 align="center">An ideation card game for journalists pursuing their next great story.</h4>
-<h4 align="center">WEBSITE TBD</h4>
+<h4 align="center"><a href="https://pitchgame.vercel.app/">Click Here</a></h4>
 
 ## Installation
 
