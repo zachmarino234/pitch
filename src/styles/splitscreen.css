@@ -1,0 +1,13 @@
+.splitscreenContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 100px;
+}
+
+.leftElement {
+}
+
+.rightElement {
+}

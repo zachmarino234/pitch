@@ -1,0 +1,65 @@
+.titleContainer {
+    display: inline-flex;
+    height: 368px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 23px;
+    flex-shrink: 0;
+}
+
+.accent {
+    background: linear-gradient(90deg, #FF8018 0%, #F02E0C 100%);
+}
+
+.text {
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.title {
+    width: 473px;
+    margin: 0;
+    color: #000;
+    font-family: "Richmond Display";
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.subText {
+    width: 537px;
+    flex: 1 0 0;
+    margin: 0;
+
+    color: #000;
+    font-family: "Source Serif Pro";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.primaryButton {
+    color: #FFF;
+    font-family: "Source Serif Pro";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    background: linear-gradient(90deg, #FF8018 0%, #F02E0C 100%);
+    border-radius: 8px;
+    display: flex;
+    padding: 14px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.primaryButton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
