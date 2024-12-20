@@ -9,14 +9,14 @@ export const Header: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <header className='header'>
+        <header className='flex justify-between items-center bg-gradient-to-r from-orange-1 to-orange-2 px-5 py-3'>
             <button 
-                className='menu-toggle' 
+                className='text-2xl p-0 text-white sm:hidden' 
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
                 ☰
             </button>
-            <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
+            <nav className={`nav hidden sm:flex sm:gap-2.5 sm:justify-center sm:flex-1 sm:order-1 ${isMenuOpen ? 'open' : ''}`}>
                 <button
                     className={location.pathname === '/' ? 'active' : ''}
                     onClick={() => { 
