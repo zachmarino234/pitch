@@ -12,7 +12,7 @@ export const GameCard: React.FC<CardProps> = ({
     content
 }) => {
     return (
-        <div className='container'>
+        <div className='container border-2 border-black'>
             <div className='body'>
                 <p className='cardTitle'>{cardTitle}</p>
                 <div className='cardDetails'>
