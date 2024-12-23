@@ -1,4 +1,7 @@
 import { useState, useEffect } from 'react';
+import { SectionLayout } from '../layouts/SectionLayout';
+import instructions from '../assets/cards/instructions.svg'
+import credits from '../assets/cards/credits.svg'
 
 export const Cards = () => {
     const [gameCardImages, setGameCardImages] = useState<string[]>([]);
@@ -42,7 +45,7 @@ export const Cards = () => {
     };
 
     return (
-        <div>
+        <>
             <div className="flex flex-col items-center mb-4">
                 <div className="flex gap-2  justify-center flex-wrap my-4 p-4 rounded-xl border-2">
                     <button onClick={selectRandomImage} className="py-2 px-3 bg-gradient-to-r from-orange-1 to-orange-2 text-white rounded-lg mr-2">Select Random Card</button>
@@ -52,25 +55,34 @@ export const Cards = () => {
                 </div>
                 {selectedImage && <img src={selectedImage} className="flex justify-center w-auto mb-4" alt="Selected Card" />}
             </div>
-            <h2>Game Cards</h2>
-            <div className="grid grid-cols-1 gap-5 m-5 sm:grid-cols-4 2xl:grid-cols-8">
-                {gameCardImages.map((src, index) => (
-                    <img key={index} src={src} className="w-full" alt={`Game Card ${index + 1}`} />
-                ))}
-            </div>
-            <h2>Prompt Cards</h2>
-            <div className="grid grid-cols-1 gap-5 m-5 sm:grid-cols-4 2xl:grid-cols-8">
-                {promptCardImages.map((src, index) => (
-                    <img key={index} src={src} className="w-full" alt={`Prompt Card ${index + 1}`} />
-                ))}
-            </div>
-            <h2>Topic Cards</h2>
-            <div className="grid grid-cols-1 gap-5 m-5 sm:grid-cols-4 2xl:grid-cols-8">
-                {topicCardImages.map((src, index) => (
-                    <img key={index} src={src} className="w-full" alt={`Topic Card ${index + 1}`} />
-                ))}
-            </div>
-        </div>
+            <SectionLayout sectionName="Instructions">
+                <div className="grid grid-cols-1 gap-6 m-8 sm:grid-cols-4 2xl:grid-cols-8">
+                    <img src={instructions} className="w-full" alt="Instructions" />
+                    <img src={credits} className='w-full' alt='Credits' />
+                </div>
+            </SectionLayout>
+            <SectionLayout sectionName="Game Cards">
+                <div className="grid grid-cols-1 gap-6 m-8 sm:grid-cols-4 2xl:grid-cols-8">
+                    {gameCardImages.map((src, index) => (
+                        <img key={index} src={src} className="w-full" alt={`Game Card ${index + 1}`} />
+                    ))}
+                </div>
+            </SectionLayout>
+            <SectionLayout sectionName="Prompt Cards">
+                <div className="grid grid-cols-1 gap-6 m-8 sm:grid-cols-4 2xl:grid-cols-8">
+                    {promptCardImages.map((src, index) => (
+                        <img key={index} src={src} className="w-full" alt={`Prompt Card ${index + 1}`} />
+                    ))}
+                </div>
+            </SectionLayout>
+            <SectionLayout sectionName="Topic Cards">
+                <div className="grid grid-cols-1 gap-6 m-8 sm:grid-cols-4 2xl:grid-cols-8">
+                    {topicCardImages.map((src, index) => (
+                        <img key={index} src={src} className="w-full" alt={`Topic Card ${index + 1}`} />
+                    ))}
+                </div>
+            </SectionLayout>
+        </>
     );
 };
 

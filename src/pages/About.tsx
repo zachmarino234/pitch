@@ -3,10 +3,10 @@
 export const About = () => {
 
     return (
-        <div>
-            <h1>About</h1>
+        <>
 
             <div className="my-4 p-4 rounded-xl border-2">
+                <h1>About</h1>
                 <p>
                     Pitch is a design kit that provides journalists a more structured and fun method for brainstorming story ideas.
                     The deck is based on the concept of cognitive load, which is the amount of information that someone
@@ -28,7 +28,7 @@ export const About = () => {
             </div>
 
             <iframe className="w-full p-9" style={{ border: '1px solid rgba(0, 0, 0, 0.1)' }} height="850" src="https://embed.figma.com/slides/H1QxQ68WMjtA6wrn0egYWp/Pitch-Project-Presentation?node-id=1-587&embed-host=share"></iframe>
-        </div>
+        </>
     );
 };
 
