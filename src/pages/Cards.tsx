@@ -45,10 +45,10 @@ export const Cards = () => {
         <div>
             <div className="flex flex-col items-center mb-4">
                 <div className="flex gap-2  justify-center flex-wrap my-4 p-4 rounded-xl border-2">
-                    <button onClick={selectRandomImage} className="py-2 px-3 bg-gradient-to-r from-orange-1 to-orange-2 text-white rounded mr-2">Select Random Card</button>
-                    <button onClick={selectRandomGameImage} className="py-2 px-3 bg-game-red text-white rounded mr-2">Select Random Game Card</button>
-                    <button onClick={selectRandomPromptImage} className="py-2 px-3 bg-prompt-teal text-white rounded mr-2">Select Random Prompt Card</button>
-                    <button onClick={selectRandomTopicImage} className="py-2 px-3 bg-topic-yellow text-white rounded">Select Random Topic Card</button>
+                    <button onClick={selectRandomImage} className="py-2 px-3 bg-gradient-to-r from-orange-1 to-orange-2 text-white rounded-lg mr-2">Select Random Card</button>
+                    <button onClick={selectRandomGameImage} className="py-2 px-3 bg-game-red text-white rounded-lg mr-2">Select Random Game Card</button>
+                    <button onClick={selectRandomPromptImage} className="py-2 px-3 bg-prompt-teal text-white rounded-lg mr-2">Select Random Prompt Card</button>
+                    <button onClick={selectRandomTopicImage} className="py-2 px-3 bg-topic-yellow text-white rounded-lg">Select Random Topic Card</button>
                 </div>
                 {selectedImage && <img src={selectedImage} className="flex justify-center w-auto mb-4" alt="Selected Card" />}
             </div>
