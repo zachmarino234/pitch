@@ -7,7 +7,7 @@ const Layout: React.FC = () => {
         <div className='layoutContainer'>
             <Header />
 
-            <main className='main'>
+            <main className='main mx-4'>
                 <div>
                     <Outlet />
                 </div>
