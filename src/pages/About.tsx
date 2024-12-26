@@ -22,8 +22,21 @@ export const About = () => {
                 </p>
                 <br />
                 <p>
-                    A full write-up of the project can be found at <a href="">zmarino.com</a>.
+                    A full write-up of the project can be found at <a href="https://zmarino.com/posts/pitch/">zmarino.com</a>.
                 </p>
+
+            </div>
+
+            <div className="my-4 p-4 rounded-xl border-2">
+                <h1>Download</h1>
+                <p>
+                    The best way to use Pitch is to download the cards and print them out. 
+                    The PDF below has all of the cards on 8.5x11 inch (letter-sized) paper.
+                    I recommend printing the cards on cardstock or thicker paper and/or laminating them.
+                    In the future, I hope to have a physical deck available for purchase, but this website and the files will always be free!
+                </p>
+
+                <a href="/pitch-cards.pdf" download className="py-2 px-4 bg-gradient-to-r from-orange-1 to-orange-2 text-white rounded-lg inline-block mt-2">Download</a>
 
             </div>
 
