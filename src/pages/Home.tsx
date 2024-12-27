@@ -21,8 +21,8 @@ export const Home = () => {
                         </div>
                     </div>}
                 child2={<div>
-                    <img src={HomeBg} alt="Background" className="home-bg w-full sm:w-1/2 px-8 hidden sm:block" />
-                    <img src={Cards} alt="Background" className="w-full sm:w-1/2 sm:px-8 block sm:hidden" />
+                    <img src={HomeBg} alt="Background" className="home-bg w-full sm:w-1/2 lg:px-8 hidden sm:block" />
+                    <img src={Cards} alt="Background" className="w-full sm:hidden" />
                 </div>}
             />
         </>
