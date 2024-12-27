@@ -1,4 +1,4 @@
-import '../styles/splitscreen.css'
+import '../styles/splitscreen.css';
 
 export const SplitScreen = ({
     child1,
@@ -8,14 +8,13 @@ export const SplitScreen = ({
     child2: React.ReactNode;
 }) => {
     return (
-        <div className="flex justify-center items-center flex-wrap px-4 gap-5 sm:h-full">
-            <div className="m-5">
+        <div className="flex flex-col sm:flex-row justify-center items-center w-full h-full">
+            <div className="flex-1 sm:w-1/2 p-4 box-border">
                 {child1}
             </div>
-            <div className="m-5">
+            <div className="flex-1 sm:w-1/2 p-4 box-border">
                 {child2}
             </div>
         </div>
-
-    )
+    );
 };
