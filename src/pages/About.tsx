@@ -8,7 +8,7 @@ export const About = () => {
             <div className="my-4 p-4 rounded-xl border-2">
                 <h1>About</h1>
                 <p>
-                    Pitch is a design kit that provides journalists a more structured and fun method for brainstorming story ideas.
+                    Pitch is a design kit that provides journalists a more structured and engaging method for brainstorming story ideas.
                     The deck is based on the concept of cognitive load, which is the amount of information that someone
                     can hold onto at one time. By breaking down the brainstorming process into more specific and guided
                     steps, the user can reduce their cognitive load which leads to more focused ideas. The cards are divided into three categories:
