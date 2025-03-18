@@ -19,7 +19,7 @@ export const ArticleCard = ({
     link: string;
 }) => {
     return (
-        <a href={link} target="_blank" rel="noopener noreferrer" className="flex flex-col gap-2 p-4 rounded-xl border-2 no-underline text-black hover:text-inherit">
+        <a href={link} target="_blank" rel="noopener noreferrer" className="flex flex-col gap-2 p-4 mb-2 rounded-xl border-2 no-underline text-black hover:text-inherit">
             <h2 className="font-richmond text-2xl font-semibold">{headline}</h2>
             <div className="flex flex-col gap-4 sm:flex-row justify-between items-baseline">
                 <span>{author}</span>

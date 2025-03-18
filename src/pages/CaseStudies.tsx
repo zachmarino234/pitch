@@ -28,6 +28,13 @@ export const CaseStudies = () => {
                     cardType={['topic']}
                     link="https://www.newtonbeacon.org/authors-phoebe-sinclair-and-lisa-stringfellow-talk-writing-at-newtonville-books/"
                 />
+                <ArticleCard
+                    headline="Authors Phoebe Sinclair and Lisa Stringfellow talk writing at Newtonville Books"
+                    author="Emily Wyrwa"
+                    cardsUsed={['On the Beat', 'Events']}
+                    cardType={['prompt', 'topic']}
+                    link="https://www.newtonbeacon.org/passport-to-discovher-highlights-newtons-women-owned-small-businesses/"
+                />
             </div>
         </div>
     );
