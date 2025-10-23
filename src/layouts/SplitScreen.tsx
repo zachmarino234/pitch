@@ -1,5 +1,3 @@
-import '../styles/splitscreen.css';
-
 export const SplitScreen = ({
     child1,
     child2
