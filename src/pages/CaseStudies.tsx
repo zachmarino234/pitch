@@ -8,7 +8,7 @@ export const CaseStudies = () => {
     return (
         <div className="mt-5 sm:mx-36">
             <div className="mb-5">
-                <p className="mb-5 font-semibold">Want a story you wrote featured? <a href="mailto:zachmarino234@gmail.com">Email me</a> with the story and the cards you used to develop the idea!</p>
+                <p className="mb-5 font-semibold">Want a story you wrote featured? <a href="mailto:hello@zmarino.com">Email me</a> with the story and the cards you used to develop the idea!</p>
                 <img src={GlobeLogo} alt="The Boston Globe Logo" className="w-1/2 sm:w-1/4 mb-3" />
                 <ArticleCard
                     headline="Video game designer finds ‘Sweet Spot’ through Boston Public Art Triennial Accelerator program"
